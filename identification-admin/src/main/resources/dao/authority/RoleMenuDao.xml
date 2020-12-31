@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bob.identification.dao.RoleMenuDao">
+    <insert id="insertList">
+        INSERT INTO ums_role_menu_relation (role_id, menu_id)
+        VALUES
+        <foreach collection="list" separator="," item="item" index="index">
+            (#{item.roleId,jdbcType=BIGINT},
+            #{item.menuId,jdbcType=BIGINT})
+        </foreach>
+    </insert>
+    <select id="getMenuListByRoleId" resultType="com.bob.identification.authority.po.UmsMenu">
+        SELECT
+            um.id id,
+            um.parent_id parentId,
+            um.create_time createTime,
+            um.title title,
+            um.level level,
+            um.sort sort,
+            um.name name,
+            um.icon icon,
+            um.hidden hidden
+        FROM
+            ums_menu um
+        INNER JOIN
+            ums_role_menu_relation urmr
+        ON
+            um.id = urmr.menu_id
+        WHERE
+            urmr.role_id = #{roleId}
+        GROUP BY
+            um.id
+    </select>
+</mapper>

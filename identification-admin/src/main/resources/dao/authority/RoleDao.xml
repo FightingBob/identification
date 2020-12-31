@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bob.identification.dao.RoleDao">
+    <select id="getMenuList" resultType="com.bob.identification.authority.po.UmsMenu">
+        SELECT
+            um.id id,
+            um.parent_id parent_id,
+            um.update_time update_time,
+            um.title title,
+            um.sort sort,
+            um.`name` `name`,
+            um.`level` `level`,
+            um.icon icon,
+            um.hidden hidden,
+            um.create_time create_time
+        FROM ums_menu um
+        INNER JOIN ums_role_menu_relation urmr ON um.id = urmr.menu_id
+        INNER JOIN ums_admin_role_relation uarr ON urmr.role_id = uarr.role_id
+        WHERE uarr.admin_id = #{adminId}
+        GROUP BY um.id
+    </select>
+    <select id="getResourceByRoleId" resultType="com.bob.identification.authority.po.UmsResource">
+        SELECT
+            ur.id id,
+            ur.create_time createTime,
+            ur.`name` `name`,
+            ur.url url,
+            ur.description description,
+            ur.category_id categoryId
+        FROM
+            `ums_resource` ur
+        INNER JOIN
+            `ums_role_resource_relation` urrr
+        ON
+            urrr.resource_id = ur.id
+        WHERE
+            urrr.role_id = #{roleId}
+        GROUP BY
+            ur.id
+    </select>
+</mapper>

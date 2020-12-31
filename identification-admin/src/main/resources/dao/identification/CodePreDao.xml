@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bob.identification.dao.CodePreDao">
+    <insert id="batchInsert">
+        INSERT INTO ${tableName} (batch_id, serial_number, query_time, status)
+        VALUES
+        <foreach collection="list" separator="," item="item" index="index">
+            (
+            #{item.batchId},
+            #{item.serialNumber},
+            #{item.queryTime},
+            #{item.status}
+            )
+        </foreach>
+    </insert>
+</mapper>
