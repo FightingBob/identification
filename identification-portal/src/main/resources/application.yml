@@ -1,0 +1,83 @@
+spring:
+  application:
+    name: identification-portal
+  profiles:
+    active: prod # 默认为开发环境
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss # 日期格式
+    default-property-inclusion: non_null
+    time-zone: GMT+8 # 北京时区
+
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 执行的sql语句日志输出
+    map-underscore-to-camel-case: true
+  mapper-locations:
+    - classpath*:dao/**/*.xml
+    - classpath*:mapper/**/*.xml
+
+jwt:
+  tokenHeader: Authorization #JWT存储的请求头
+  secret: mall-admin-secret #JWT加解密使用的密钥
+  expiration: 604800 #JWT的超期限时间(60*60*24*7)
+  tokenHead: 'Bearer '  #JWT负载中拿到开头
+
+secure:
+  ignored:
+    urls: #安全路径白名单
+      - /swagger-ui.html
+      - /swagger-resources/**
+      - /swagger/**
+      - /**/v2/api-docs
+      - /**/*.js
+      - /**/*.css
+      - /**/*.png
+      - /**/*.ico
+      - /webjars/springfox-swagger-ui/**
+      - /actuator/**
+      - /druid/**
+      - /doc.html
+      - /home/query
+
+server:
+  port: 8085
+
+redis:
+  database:
+    authority:
+      name: 'authority'
+      key:
+        admin: 'ums:admin'
+        resourceList: 'ums:resourceList'
+    identification:
+      name: 'identification'
+      key:
+        codeList: 'code:list'
+        whiteCode: 'whiteList:code'
+        blackCode: 'blackList:code'
+        visitor: 'visit:visitor'
+        visitRecord: 'visit:visitRecord'
+  expire:
+    common: 86400 # 24小时
+
+littlebob:
+  password:
+    prefix: identification
+    suffix: bob
+
+knife4j:
+  enable: true
+  setting:
+    language: zh-CN
+
+logging:
+  level:
+    root: info #日志配置DEBUG,INFO,WARN,ERROR
+    com.bob.identification: debug
+  config: classpath:logback-spring.xml

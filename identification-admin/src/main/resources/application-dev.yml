@@ -10,7 +10,7 @@ spring:
           password: wsd123.*
           driver-class-name: com.mysql.cj.jdbc.Driver
         slave_1:
-          url: jdbc:mysql://localhost:3306/laikou?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+          url: jdbc:mysql://localhost:3306/laikou?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true
           username: root
           password: wsd123.*
           driver-class-name: com.mysql.cj.jdbc.Driver
@@ -20,7 +20,17 @@ spring:
           password: wsd123.*
           driver-class-name: com.mysql.cj.jdbc.Driver
         slave_3:
-          url: jdbc:mysql://localhost:3306/fenyi?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+          url: jdbc:mysql://localhost:3306/fenyi?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true
+          username: root
+          password: wsd123.*
+          driver-class-name: com.mysql.cj.jdbc.Driver
+        slave_4:
+          url: jdbc:mysql://localhost:3306/kaibin?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true
+          username: root
+          password: wsd123.*
+          driver-class-name: com.mysql.cj.jdbc.Driver
+        slave_5:
+          url: jdbc:mysql://localhost:3306/yaladys?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true
           username: root
           password: wsd123.*
           driver-class-name: com.mysql.cj.jdbc.Driver

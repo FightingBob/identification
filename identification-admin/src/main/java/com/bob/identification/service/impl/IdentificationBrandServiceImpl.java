@@ -61,6 +61,11 @@ public class IdentificationBrandServiceImpl implements IdentificationBrandServic
         return brandMapper.selectOne(queryWrapper);
     }
 
+    @Override
+    public Brand getById(Integer brandId) {
+        return brandMapper.selectById(brandId);
+    }
+
     /**
      * 新增品牌
      *

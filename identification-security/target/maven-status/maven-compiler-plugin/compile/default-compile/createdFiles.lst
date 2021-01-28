@@ -1,0 +1,14 @@
+com\bob\identification\security\component\JwtAuthenticationTokenFilter.class
+com\bob\identification\security\config\RedisConfig.class
+com\bob\identification\security\component\DynamicSecurityMetadataSource.class
+com\bob\identification\security\annotation\CacheException.class
+com\bob\identification\security\component\RestfulAccessDeniedHandler.class
+com\bob\identification\security\util\JwtTokenUtil.class
+com\bob\identification\security\aspect\RedisCacheAspect.class
+com\bob\identification\security\component\DynamicSecurityService.class
+com\bob\identification\security\util\SpringUtil.class
+com\bob\identification\security\component\RestAuthenticationEntryPoint.class
+com\bob\identification\security\config\IgnoreUrlsConfig.class
+com\bob\identification\security\component\DynamicSecurityFilter.class
+com\bob\identification\security\config\SecurityConfig.class
+com\bob\identification\security\component\DynamicAccessDecisionManager.class

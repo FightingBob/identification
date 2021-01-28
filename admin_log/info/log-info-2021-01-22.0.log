@@ -1,0 +1,103 @@
+2021-01-22 09:59:43.156 [main] INFO  c.b.identification.IdentificationAdminApplication - Starting IdentificationAdminApplication using Java 1.8.0_221 on bob with PID 15236 (F:\my\springboot\identification\identification-admin\target\classes started by Administrator in F:\my\springboot\identification)
+2021-01-22 09:59:43.153 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-22 09:59:43.175 [main] INFO  c.b.identification.IdentificationAdminApplication - The following profiles are active: dev
+2021-01-22 09:59:44.221 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-22 09:59:44.223 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-22 09:59:44.255 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2021-01-22 09:59:44.679 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-22 09:59:44.686 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$dc899695] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-22 09:59:44.700 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-22 09:59:44.779 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@578a5ce8' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-22 09:59:44.787 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-22 09:59:45.075 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8666 (http)
+2021-01-22 09:59:45.082 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8666"]
+2021-01-22 09:59:45.083 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-22 09:59:45.083 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-22 09:59:45.165 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-22 09:59:45.165 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1913 ms
+2021-01-22 09:59:45.413 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2021-01-22 09:59:45.718 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2021-01-22 09:59:45.719 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_1 - Starting...
+2021-01-22 09:59:45.743 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_1 - Start completed.
+2021-01-22 09:59:45.744 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_2 - Starting...
+2021-01-22 09:59:45.767 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_2 - Start completed.
+2021-01-22 09:59:45.767 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_3 - Starting...
+2021-01-22 09:59:45.791 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_3 - Start completed.
+2021-01-22 09:59:45.791 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_4 - Starting...
+2021-01-22 09:59:45.814 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_4 - Start completed.
+2021-01-22 09:59:45.814 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_5 - Starting...
+2021-01-22 09:59:45.837 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_5 - Start completed.
+2021-01-22 09:59:45.838 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - load a datasource named [slave_4] success
+2021-01-22 09:59:45.838 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - load a datasource named [slave_5] success
+2021-01-22 09:59:45.838 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - load a datasource named [slave_2] success
+2021-01-22 09:59:45.838 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - load a datasource named [slave_3] success
+2021-01-22 09:59:45.838 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - load a datasource named [master] success
+2021-01-22 09:59:45.838 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - load a datasource named [slave_1] success
+2021-01-22 09:59:45.838 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [6] datasource,primary datasource named [master]
+2021-01-22 09:59:47.786 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18bf1bad, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a390b8c, org.springframework.security.web.header.HeaderWriterFilter@7a053795, org.springframework.security.web.authentication.logout.LogoutFilter@37196d53, com.bob.identification.security.component.JwtAuthenticationTokenFilter@78d61f17, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@237d0625, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2987b699, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1cb929a9, org.springframework.security.web.session.SessionManagementFilter@58690f5e, org.springframework.security.web.access.ExceptionTranslationFilter@29a50a11, com.bob.identification.security.component.DynamicSecurityFilter@a251135, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5f877009]
+2021-01-22 09:59:47.810 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-22 09:59:48.063 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-22 09:59:48.706 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8666"]
+2021-01-22 09:59:48.725 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8666 (http) with context path ''
+2021-01-22 09:59:48.726 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-01-22 09:59:48.742 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-01-22 09:59:48.774 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-22 09:59:48.910 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_1
+2021-01-22 09:59:48.912 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_1
+2021-01-22 09:59:48.914 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2021-01-22 09:59:48.929 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_2
+2021-01-22 09:59:48.931 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_2
+2021-01-22 09:59:48.932 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_2
+2021-01-22 09:59:48.934 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_1
+2021-01-22 09:59:48.941 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_3
+2021-01-22 09:59:48.966 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_3
+2021-01-22 09:59:48.983 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateStatusUsingPOST_1
+2021-01-22 09:59:48.988 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_4
+2021-01-22 09:59:48.992 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getItemUsingGET_1
+2021-01-22 09:59:48.997 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_4
+2021-01-22 09:59:49.003 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_2
+2021-01-22 09:59:49.006 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_1
+2021-01-22 09:59:49.007 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_5
+2021-01-22 09:59:49.010 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listAllUsingGET_1
+2021-01-22 09:59:49.011 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_3
+2021-01-22 09:59:49.014 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_2
+2021-01-22 09:59:49.015 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_6
+2021-01-22 09:59:49.018 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getItemUsingGET_2
+2021-01-22 09:59:49.022 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_5
+2021-01-22 09:59:49.024 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listAllUsingGET_2
+2021-01-22 09:59:49.025 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_4
+2021-01-22 09:59:49.030 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_3
+2021-01-22 09:59:49.031 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_7
+2021-01-22 09:59:49.034 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_6
+2021-01-22 09:59:49.035 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listAllUsingGET_3
+2021-01-22 09:59:49.039 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_5
+2021-01-22 09:59:49.039 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateStatusUsingPOST_2
+2021-01-22 09:59:49.057 [main] INFO  c.b.identification.IdentificationAdminApplication - Started IdentificationAdminApplication in 6.57 seconds (JVM running for 7.208)
+2021-01-22 10:04:06.977 [http-nio-8666-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-22 10:04:06.977 [http-nio-8666-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-22 10:04:06.979 [http-nio-8666-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-01-22 10:04:07.643 [http-nio-8666-exec-1] INFO  com.bob.identification.common.log.WebLogAspect - {"method":"POST","ip":"littlebob","description":"登录后返回token","uri":"/admin/login","url":"http://192.168.0.48:8666/admin/login","result":{"code":200,"data":{"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsaXR0bGVib2IiLCJjcmVhdGVkIjoxNjExMjgxMDQ3NTcwLCJleHAiOjE2MTE4ODU4NDd9.zOFVE0nsO6RIewF7qjUChbxKEDHQzXjf2YTpn0PYmThZCDHQblfiDhB2JIEK5qwp_MJaAYbXbWE_C3Vljrmhdw","tokenHead":"Bearer "},"message":"操作成功"},"basePath":"http://192.168.0.48:8666","parameter":{"password":"wsd2586","username":"littlebob"},"startTime":1611281047107,"spendTime":505}
+2021-01-22 10:04:07.732 [http-nio-8666-exec-2] INFO  c.b.i.s.component.JwtAuthenticationTokenFilter - checking username:littlebob
+2021-01-22 10:04:07.759 [http-nio-8666-exec-2] INFO  c.b.i.s.component.JwtAuthenticationTokenFilter - authenticated user:littlebob
+2021-01-22 10:04:07.795 [http-nio-8666-exec-2] INFO  com.bob.identification.common.log.WebLogAspect - {"method":"GET","ip":"littlebob","description":"获取当前登录用户信息","uri":"/admin/info","url":"http://192.168.0.48:8666/admin/info","result":{"code":200,"data":{"roles":["超级管理员"],"avatar":"","phone":"13422142586","nickname":"摇滚小白呀","name":"littlebob","menus":[{"hidden":0,"level":0,"icon":"ums","updateTime":1598686735000,"sort":0,"title":"权限管理","parentId":0,"createTime":1598686735000,"name":"ums","id":10},{"hidden":0,"level":0,"icon":"ums-admin","updateTime":1598686841000,"sort":0,"title":"用户管理","parentId":10,"createTime":1598686841000,"name":"admin","id":11},{"hidden":0,"level":0,"icon":"ums-role","updateTime":1598687248000,"sort":0,"title":"角色管理","parentId":10,"createTime":1598687248000,"name":"role","id":12},{"hidden":0,"level":0,"icon":"ums-menu","updateTime":1598687271000,"sort":0,"title":"菜单管理","parentId":10,"createTime":1598687271000,"name":"menu","id":13},{"hidden":0,"level":1,"icon":"ums-resource","updateTime":1598687596000,"sort":0,"title":"资源管理","parentId":10,"createTime":1598687294000,"name":"resource","id":14},{"hidden":0,"level":0,"icon":"antifake","updateTime":1598693852000,"sort":0,"title":"防伪管理","parentId":0,"createTime":1598693852000,"name":"antifake","id":15},{"hidden":0,"level":1,"icon":"antifake-brand","updateTime":1598693877000,"sort":0,"title":"品牌管理","parentId":15,"createTime":1598693877000,"name":"brand","id":16},{"hidden":0,"level":1,"icon":"antifake-code","updateTime":1599615658000,"sort":0,"title":"防伪码管理","parentId":15,"createTime":1599615658000,"name":"code","id":17},{"hidden":0,"level":1,"icon":"antifake-config","updateTime":1601950698000,"sort":0,"title":"提示管理","parentId":15,"createTime":1601950698000,"name":"config","id":18},{"hidden":0,"level":1,"icon":"antifake-batch","updateTime":1609209431000,"sort":0,"title":"批次管理","parentId":15,"createTime":1609209431000,"name":"batch","id":19}],"email":"869674151@qq.com","introduction":"默认介绍：xxxx"},"message":"操作成功"},"basePath":"http://192.168.0.48:8666","startTime":1611281047762,"spendTime":26}
+2021-01-22 10:04:08.023 [http-nio-8666-exec-3] INFO  c.b.i.s.component.JwtAuthenticationTokenFilter - checking username:littlebob
+2021-01-22 10:04:08.031 [http-nio-8666-exec-3] INFO  c.b.i.s.component.JwtAuthenticationTokenFilter - authenticated user:littlebob
+2021-01-22 10:04:08.080 [http-nio-8666-exec-3] INFO  com.bob.identification.common.log.WebLogAspect - {"method":"GET","ip":"littlebob","description":"访问人数","uri":"/visit/visitNumber","url":"http://192.168.0.48:8666/visit/visitNumber","result":{"code":200,"data":1,"message":"操作成功"},"basePath":"http://192.168.0.48:8666","startTime":1611281048035,"spendTime":44}
+2021-01-22 10:04:32.883 [http-nio-8666-exec-6] INFO  c.b.i.s.component.JwtAuthenticationTokenFilter - checking username:littlebob
+2021-01-22 10:04:32.891 [http-nio-8666-exec-6] INFO  c.b.i.s.component.JwtAuthenticationTokenFilter - authenticated user:littlebob
+2021-01-22 10:04:32.928 [http-nio-8666-exec-6] INFO  com.bob.identification.common.log.WebLogAspect - {"method":"GET","ip":"littlebob","description":"查询","uri":"/code/query","url":"http://192.168.0.48:8666/code/query","result":{"code":200,"data":{"totalPage":1,"pageSize":1,"list":[{"isReal":"假","serialNumber":"123456789123456","result":"Due to system problem, this code 123456789123456 cannot be verified at the moment, please contact us via weisheda-laikou@foxmail.com for further assistance, thank you.","status":"无效"}],"pageNum":1,"total":1},"message":"操作成功"},"basePath":"http://192.168.0.48:8666","parameter":{"":"123456789123456"},"startTime":1611281072897,"spendTime":30}
+2021-01-22 10:04:40.369 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-22 10:04:40.486 [SpringContextShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2021-01-22 10:04:40.487 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - slave_4 - Shutdown initiated...
+2021-01-22 10:04:40.490 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - slave_4 - Shutdown completed.
+2021-01-22 10:04:40.490 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - slave_5 - Shutdown initiated...
+2021-01-22 10:04:40.492 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - slave_5 - Shutdown completed.
+2021-01-22 10:04:40.492 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - slave_2 - Shutdown initiated...
+2021-01-22 10:04:40.494 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - slave_2 - Shutdown completed.
+2021-01-22 10:04:40.494 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - slave_3 - Shutdown initiated...
+2021-01-22 10:04:40.496 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - slave_3 - Shutdown completed.
+2021-01-22 10:04:40.496 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2021-01-22 10:04:40.498 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2021-01-22 10:04:40.498 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - slave_1 - Shutdown initiated...
+2021-01-22 10:04:40.500 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - slave_1 - Shutdown completed.
+2021-01-22 10:04:40.500 [SpringContextShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye

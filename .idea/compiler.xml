@@ -11,6 +11,7 @@
         <module name="identification-security" />
         <module name="identification-admin" />
         <module name="identification-common" />
+        <module name="identification-portal" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />
@@ -20,6 +21,7 @@
       <module name="identification-admin" options="-parameters" />
       <module name="identification-common" options="-parameters" />
       <module name="identification-mbg" options="-parameters" />
+      <module name="identification-portal" options="-parameters" />
       <module name="identification-security" options="-parameters" />
     </option>
   </component>

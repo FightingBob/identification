@@ -45,4 +45,11 @@ public interface IdentificationBrandService {
      * @return 品牌
      */
     Brand getByPreNumber(Integer preNumber);
+
+    /**
+     * 获取品牌
+     * @param brandId 品牌id
+     * @return 品牌
+     */
+    Brand getById(Integer brandId);
 }

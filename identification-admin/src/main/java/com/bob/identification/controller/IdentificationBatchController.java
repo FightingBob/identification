@@ -1,11 +1,9 @@
 package com.bob.identification.controller;
 
-import com.bob.identification.authority.po.UmsAdmin;
 import com.bob.identification.common.api.CommonPage;
 import com.bob.identification.common.api.CommonResult;
 import com.bob.identification.common.util.IPUtil;
 import com.bob.identification.dto.AddBatchParam;
-import com.bob.identification.identification.po.Batch;
 import com.bob.identification.service.IdentificationBatchService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -15,7 +13,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.List;
 
 /**
  * 防伪批次管理
@@ -32,8 +29,10 @@ public class IdentificationBatchController {
     @ApiOperation("新增批次")
     @PostMapping("/add")
     public CommonResult add(@Validated @RequestBody AddBatchParam addBatchParam) {
-        int count = batchService.add(addBatchParam);
-        return count > 0 ? CommonResult.success(null) : CommonResult.failed();
+        //int count = batchService.add(addBatchParam);
+        //return count > 0 ? CommonResult.success(null) : CommonResult.failed();
+        batchService.add(addBatchParam);
+        return CommonResult.success(null);
     }
 
     @ApiOperation(value = "查询批次列表")
@@ -63,8 +62,8 @@ public class IdentificationBatchController {
     @ApiOperation("生成防伪码文件")
     @PostMapping("/createFile")
     public CommonResult createFile(@RequestParam Integer batchId) {
-        int count = batchService.createFile(batchId);
-        return count > 0 ? CommonResult.success(null) : CommonResult.failed();
+        batchService.createFile(batchId);
+        return CommonResult.success(null);
     }
 
     @ApiOperation("导出txt文件")

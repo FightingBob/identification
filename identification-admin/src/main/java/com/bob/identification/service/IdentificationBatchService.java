@@ -18,7 +18,7 @@ public interface IdentificationBatchService {
      * @param addBatchParam 批次参数
      * @return 添加状态
      */
-    int add(AddBatchParam addBatchParam);
+    void add(AddBatchParam addBatchParam);
 
     /**
      * 查询批次列表
@@ -50,7 +50,7 @@ public interface IdentificationBatchService {
      * @param batchId 批次id
      * @return 生成状态
      */
-    int createFile(Integer batchId);
+    void createFile(Integer batchId);
 
     /**
      * 导出tx文件
@@ -66,4 +66,11 @@ public interface IdentificationBatchService {
      * @return 删除状态
      */
     int deleteFile(Integer batchId);
+
+    /**
+     * 根据防伪码前三数字获取批次
+     * @param preThreeNumber 前三个数字
+     * @return 批次
+     */
+    Batch getByPreThreeNumber(String preThreeNumber);
 }

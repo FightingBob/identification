@@ -1,5 +1,7 @@
 package com.bob.identification.service;
 
+import com.bob.identification.common.api.QueryCode;
+
 import java.util.List;
 
 /**
@@ -23,4 +25,54 @@ public interface IdentificationCodeCacheService {
      * @return 防伪码
      */
     List<String> getList(Integer batchId, String preThreeNumber);
+
+    /**
+     * 从白名单里查询防伪码
+     * @param code 防伪码
+     * @return 防伪码
+     */
+    QueryCode queryCodeFromWhiteList(String code);
+
+    /**
+     * 从黑名单里查询防伪码
+     * @param code 防伪码
+     * @return 防伪码
+     */
+    QueryCode queryCodeFromBlackList(String code);
+
+    /**
+     * 添加白名单防伪码
+     * @param queryCode 防伪码
+     */
+    void addWhiteCode(QueryCode queryCode);
+
+    /**
+     * 添加黑名单防伪码
+     * @param queryCode 防伪码
+     */
+    void addBlackCode(QueryCode queryCode);
+
+    /**
+     * 添加防伪码到黑名单
+     * @param code 防伪码
+     */
+    void addBlackCode(String code);
+
+    /**
+     * 删除白名单的防伪码
+     * @param queryCode 防伪码
+     */
+    void deleteWhiteCode(QueryCode queryCode);
+
+    /**
+     * 删除黑名单的防伪码
+     * @param code 防伪码
+     */
+    void deleteBlackCode(String code);
+
+    /**
+     * 删除批次防伪码
+     * @param batchId 批次id
+     */
+    void deleteListByBatchId(Long batchId);
 }

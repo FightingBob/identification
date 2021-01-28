@@ -40,7 +40,7 @@ public class WebLogAspect {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(WebLogAspect.class);
 
-    @Pointcut("execution(public * com.bob.identification.controller.*.*(..))||execution(public * com.macro.mall.*.controller.*.*(..))")
+    @Pointcut("execution(public * com.bob.identification.controller.*.*(..))||execution(public * com.bob.identification.*.controller.*.*(..))")
     public void webLog() {
     }
 

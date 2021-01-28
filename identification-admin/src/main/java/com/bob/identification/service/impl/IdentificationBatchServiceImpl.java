@@ -11,16 +11,20 @@ import com.bob.identification.common.api.CommonPage;
 import com.bob.identification.common.api.CommonStatus;
 import com.bob.identification.common.exception.Asserts;
 import com.bob.identification.common.util.ExportTxtUtil;
+import com.bob.identification.common.util.ListPageUtil;
 import com.bob.identification.common.util.MyIdUtil;
+import com.bob.identification.common.util.NumberGeneratorUtil;
 import com.bob.identification.dto.AddBatchParam;
 import com.bob.identification.identification.mapper.BatchMapper;
 import com.bob.identification.identification.po.Batch;
 import com.bob.identification.identification.po.Brand;
+import com.bob.identification.identification.po.CodePre;
 import com.bob.identification.service.IdentificationBatchService;
 import com.bob.identification.service.IdentificationBrandService;
 import com.bob.identification.service.IdentificationCodeCacheService;
 import com.bob.identification.service.IdentificationCodeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -39,6 +43,10 @@ import java.util.List;
 @DS("slave_2")
 public class IdentificationBatchServiceImpl implements IdentificationBatchService {
 
+    private static final int BATCH_NUMBER = 100000;
+
+
+
     @Autowired
     private BatchMapper batchMapper;
 
@@ -51,8 +59,9 @@ public class IdentificationBatchServiceImpl implements IdentificationBatchServic
     @Autowired
     private IdentificationCodeCacheService codeCacheService;
 
+    @Async
     @Override
-    public int add(AddBatchParam addBatchParam) {
+    public void add(AddBatchParam addBatchParam) {
         Batch batch = new Batch();
         BeanUtil.copyProperties(addBatchParam, batch);
         batch.setCreateTime(LocalDateTime.now());
@@ -61,7 +70,9 @@ public class IdentificationBatchServiceImpl implements IdentificationBatchServic
         batch.setPreThreeNumber(setPreThreeNumber(batch.getFirstNumber(), batch.getSecondNumber(), batch.getThirdNumber()));
         batch.setStatus(1);
         batch.setDemand(addBatchParam.getDemand());
-        return batchMapper.insert(batch) > 0 ? addList(batch) : CommonStatus.FAILED.getStatus();
+        batchMapper.insert(batch);
+        addList(batch);
+        //return batchMapper.insert(batch) > 0 ? addList(batch) : CommonStatus.FAILED.getStatus();
     }
 
     /**
@@ -74,11 +85,16 @@ public class IdentificationBatchServiceImpl implements IdentificationBatchServic
         if (BeanUtil.isEmpty(brand)) {
             Asserts.fail("防伪品牌数据异常，请修复");
         }
-        if (brand.getBrandCode().equals("LAIKOU")) {
-            return codeService.laikouAddList(batch);
+        switch (brand.getBrandCode()) {
+            case "LAIKOU":
+                return codeService.laikouAddList(batch);
+            case "FENYI":
+                return codeService.fenyiAddList(batch);
+            case "KAIBIN":
+                return codeService.kaibinAddList(batch);
+            default:
+                return codeService.yaladysAddList(batch);
         }
-        // TODO: 2020/12/31/031 未完成
-        return codeService.fenyiAddList(batch);
     }
 
     @Override
@@ -105,11 +121,13 @@ public class IdentificationBatchServiceImpl implements IdentificationBatchServic
 
     @Override
     public int delete(Long batchId) {
+        codeService.deleteCacheCodeByBatchId(batchId);
         return batchMapper.deleteById(batchId);
     }
 
+    @Async
     @Override
-    public int createFile(Integer batchId) {
+    public void createFile(Integer batchId) {
         Batch batch = getById(batchId);
         if (BeanUtil.isEmpty(batch)) {
             Asserts.fail("批次数据异常，请修复");
@@ -120,15 +138,25 @@ public class IdentificationBatchServiceImpl implements IdentificationBatchServic
             if (BeanUtil.isEmpty(brand)) {
                 Asserts.fail("防伪品牌数据异常，请修复");
             }
-            if (brand.getBrandCode().equals("LAIKOU")) {
-                list = codeService.laikouGetListByBatchId(batch);
-            }else {
-                list = codeService.fenyiGetListByBatchId(batch);
+            switch (brand.getBrandCode()) {
+                case "LAIKOU":
+                    list = codeService.laikouGetListByBatchId(batch);
+                    break;
+                case "FENYI":
+                    list = codeService.fenyiGetListByBatchId(batch);
+                    break;
+                case "KAIBIN":
+                    list = codeService.kaibinGetListByBatchId(batch);
+                    break;
+                default:
+                    list = codeService.yaladysGetListByBatchId(batch);
+                    break;
             }
-            // TODO: 2020/12/31/031 未完成
         }
         String relativePath = ExportTxtUtil.listToTxt(list);
-        return StrUtil.isNotBlank(relativePath) ? updateCodeSufUrl(batchId, relativePath) : CommonStatus.FAILED.getStatus();
+        if (StrUtil.isNotBlank(relativePath)) {
+            updateCodeSufUrl(batchId, relativePath);
+        }
     }
 
     @Override
@@ -152,6 +180,14 @@ public class IdentificationBatchServiceImpl implements IdentificationBatchServic
         batch.setEncryptCodeSufUrl(null);
         deleteFileFolder(batchId);
         return batchMapper.updateById(batch);
+    }
+
+    @Override
+    public Batch getByPreThreeNumber(String preThreeNumber) {
+        QueryWrapper<Batch> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("pre_three_number", preThreeNumber);
+        queryWrapper.last("limit 1");
+        return batchMapper.selectOne(queryWrapper);
     }
 
     /**

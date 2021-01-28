@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="725f64b9-4667-4bb0-916d-4f274d3baf24" name="Default Changelist" comment="" />
+    <list default="true" id="725f64b9-4667-4bb0-916d-4f274d3baf24" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/IdentificationAdminApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/IdentificationAdminApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/config/MyBatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/config/MyBatisPlusConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/controller/IdentificationBatchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/controller/IdentificationBatchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/service/IdentificationBatchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/service/IdentificationBatchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/service/IdentificationBrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/service/IdentificationBrandService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/service/IdentificationCodeCacheService.java" beforeDir="false" afterPath="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/service/IdentificationCodeCacheService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/service/IdentificationCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/service/IdentificationCodeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/service/impl/IdentificationBatchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/service/impl/IdentificationBatchServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/service/impl/IdentificationBrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/service/impl/IdentificationBrandServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/service/impl/IdentificationCodeCacheServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/service/impl/IdentificationCodeCacheServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/service/impl/IdentificationCodeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/service/impl/IdentificationCodeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/service/impl/IdentificationVisitServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/service/impl/IdentificationVisitServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identification-admin/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/identification-admin/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identification-admin/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/identification-admin/src/main/resources/application-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identification-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/identification-admin/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identification-common/src/main/java/com/bob/identification/common/log/WebLogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/identification-common/src/main/java/com/bob/identification/common/log/WebLogAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identification-common/target/classes/META-INF/identification-common.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identification-common/target/classes/com/bob/identification/common/log/WebLogAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/identification-common/target/classes/com/bob/identification/common/log/WebLogAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identification-mbg/src/main/java/com/bob/identification/MyBatisGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/identification-mbg/src/main/java/com/bob/identification/MyBatisGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identification-mbg/target/classes/META-INF/identification-mbg.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identification-mbg/target/classes/com/bob/identification/MyBatisGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/identification-mbg/target/classes/com/bob/identification/MyBatisGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,13 +53,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Mybatis Mapper" />
         <option value="JUnit5 Test Class" />
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -55,6 +86,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1ljN7Pg9EkAdcjokwSWFr3GPEhh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -65,7 +99,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/service/impl" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/identification-admin/src/main/resources/dao/identification" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -75,23 +109,33 @@
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.bob.identification.service.impl" />
+      <recent name="com.bob.identification.service" />
+      <recent name="com.bob.identification.controller" />
+      <recent name="com.bob.identification.dao" />
+      <recent name="com.bob.identification.dto" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.bob.identification.service.impl" />
       <recent name="com.bob.identification.service" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.bob.identification.service.impl" />
-      <recent name="com.bob.identification.dao" />
-      <recent name="com.bob.identification.dto" />
-      <recent name="com.bob.identification.service" />
-      <recent name="com.bob.identification.common.service.impl" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\my\springboot\identification\identification-security\src\main\java\com\bob\identification\security\config" />
-      <recent name="F:\my\springboot\identification\identification-security\src\main\java\com\bob\identification\security\component" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.bob.identification.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\my\springboot\identification" />
+      <recent name="F:\my\springboot\identification\identification-portal\src\main\resources" />
+      <recent name="F:\my\springboot\identification\identification-admin\src\main\resources" />
+      <recent name="F:\my\springboot\identification\identification-portal\src\main\java\com\bob\identification\config" />
+      <recent name="F:\my\springboot\identification\identification-security\src\main\java\com\bob\identification\security\config" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bob.identification.bo" />
+      <recent name="com.bob.identification.config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\my\springboot\identification\identification-admin\src\main\resources\dao\authority" />
@@ -110,7 +154,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MyBatisGenerator">
+  <component name="RunManager" selected="Spring Boot.IdentificationPortalApplication">
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bob.identification.dto.Demo" />
+      <module name="identification-portal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bob.identification.common.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyBatisGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bob.identification.MyBatisGenerator" />
       <module name="identification-mbg" />
@@ -120,22 +177,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BrandServiceTest.list" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="identification-admin" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bob.identification.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.bob.identification.service" />
-      <option name="MAIN_CLASS_NAME" value="com.bob.identification.service.BrandServiceTest" />
-      <option name="METHOD_NAME" value="list" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -195,13 +236,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="IdentificationPortalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="identification-portal" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bob.identification.IdentificationPortalApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MyBatisGenerator" />
+        <item itemvalue="Application.Demo" />
         <item itemvalue="JUnit.IdentificationCodeServiceImplTest.addList" />
         <item itemvalue="JUnit.IdentificationCodeServiceImplTest.addCode" />
         <item itemvalue="JUnit.UmsAdminServiceImplTest.getByUsername" />
-        <item itemvalue="JUnit.BrandServiceTest.list" />
       </list>
     </recent_temporary>
   </component>
@@ -236,12 +284,43 @@
       <workItem from="1608945446086" duration="10596000" />
       <workItem from="1609202253208" duration="16266000" />
       <workItem from="1609290157582" duration="25231000" />
-      <workItem from="1609375141801" duration="20825000" />
+      <workItem from="1609375141801" duration="22410000" />
+      <workItem from="1609634932658" duration="29384000" />
+      <workItem from="1609721058252" duration="24061000" />
+      <workItem from="1609808325866" duration="2620000" />
+      <workItem from="1609894829580" duration="17231000" />
+      <workItem from="1609918311130" duration="8592000" />
+      <workItem from="1609981766355" duration="25570000" />
+      <workItem from="1610067656004" duration="2110000" />
+      <workItem from="1610075620617" duration="13677000" />
+      <workItem from="1610169258553" duration="9425000" />
+      <workItem from="1610327080947" duration="7486000" />
+      <workItem from="1610499660427" duration="1807000" />
+      <workItem from="1610591972823" duration="2160000" />
+      <workItem from="1610680819515" duration="601000" />
+      <workItem from="1610947742318" duration="4603000" />
+      <workItem from="1611106624033" duration="8912000" />
+      <workItem from="1611278179847" duration="4334000" />
+      <workItem from="1611368459296" duration="3581000" />
+      <workItem from="1611538102859" duration="2211000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -315,6 +394,66 @@
           <url>file://$PROJECT_DIR$/identification-security/src/main/java/com/bob/identification/security/component/DynamicSecurityFilter.java</url>
           <line>56</line>
           <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/identification-portal/src/main/java/com/bob/identification/component/VisitTask.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/identification-portal/src/main/java/com/bob/identification/service/impl/IdentificationVisitServiceImpl.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/identification-portal/src/main/java/com/bob/identification/service/impl/IdentificationVisitServiceImpl.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/identification-portal/src/main/java/com/bob/identification/service/impl/IdentificationVisitServiceImpl.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/identification-portal/src/main/java/com/bob/identification/service/impl/IPCacheServiceImpl.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/identification-portal/src/main/java/com/bob/identification/service/impl/IdentificationVisitServiceImpl.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/identification-portal/src/main/java/com/bob/identification/service/impl/IdentificationVisitServiceImpl.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/identification-portal/src/main/java/com/bob/identification/service/impl/IPCacheServiceImpl.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/identification-portal/src/main/java/com/bob/identification/service/impl/IPCacheServiceImpl.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/service/impl/IdentificationVisitServiceImpl.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/service/impl/IdentificationVisitServiceImpl.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/identification-admin/src/main/java/com/bob/identification/service/impl/IPCacheServiceImpl.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

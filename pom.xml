@@ -15,6 +15,7 @@
         <module>identification-mbg</module>
         <module>identification-security</module>
         <module>identification-admin</module>
+        <module>identification-portal</module>
     </modules>
 
     <parent>
@@ -52,6 +53,9 @@
         <spring-boot-starter-security.version>2.4.1</spring-boot-starter-security.version>
         <jjwt.version>0.9.1</jjwt.version>
         <dynamic-datasource-spring-boot-starter.version>3.2.1</dynamic-datasource-spring-boot-starter.version>
+        <spring-boot-starter-amqp.version>2.4.1</spring-boot-starter-amqp.version>
+        <logstash-logback-encoder.version>6.6</logstash-logback-encoder.version>
+        <spring-cloud-starter-alibaba-sentinel.version>2.2.4.RELEASE</spring-cloud-starter-alibaba-sentinel.version>
     </properties>
 
     <dependencies>
@@ -191,6 +195,24 @@
                 <groupId>com.baomidou</groupId>
                 <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
                 <version>${dynamic-datasource-spring-boot-starter.version}</version>
+            </dependency>
+            <!--消息队列-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-amqp</artifactId>
+                <version>${spring-boot-starter-amqp.version}</version>
+            </dependency>
+            <!--日志配置-->
+            <dependency>
+                <groupId>net.logstash.logback</groupId>
+                <artifactId>logstash-logback-encoder</artifactId>
+                <version>${logstash-logback-encoder.version}</version>
+            </dependency>
+            <!--防止频繁点击-->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+                <version>${spring-cloud-starter-alibaba-sentinel.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

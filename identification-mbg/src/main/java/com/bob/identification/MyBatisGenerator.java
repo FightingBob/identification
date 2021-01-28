@@ -112,7 +112,7 @@ public class MyBatisGenerator {
         // 写于父类中的公共字段
         //strategy.setSuperEntityColumns("id");
         // 默认生成所有表 当注释掉setInclude()方法时
-        strategy.setInclude("batch"); //要生成的表名，想要生成哪个表的代码就填表名，可传多个参数，","隔开
+        strategy.setInclude("old_code"); //要生成的表名，想要生成哪个表的代码就填表名，可传多个参数，","隔开
         //strategy.setControllerMappingHyphenStyle(true); //url中驼峰转连字符
         strategy.setTablePrefix(pc.getModuleName() + "_"); //生成实体时去掉表前缀
         mpg.setStrategy(strategy);

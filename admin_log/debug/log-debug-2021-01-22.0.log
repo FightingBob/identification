@@ -1,0 +1,6 @@
+2021-01-22 09:59:43.161 [main] DEBUG c.b.identification.IdentificationAdminApplication - Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-22 09:59:47.062 [main] DEBUG c.b.i.s.component.JwtAuthenticationTokenFilter - Filter 'jwtAuthenticationTokenFilter' configured for use
+2021-01-22 10:04:08.033 [http-nio-8666-exec-3] DEBUG c.b.i.security.component.DynamicSecurityFilter - Authorized public object filter invocation [GET /visit/visitNumber]
+2021-01-22 10:04:08.035 [http-nio-8666-exec-3] DEBUG c.b.i.security.component.DynamicSecurityFilter - Authorized public object filter invocation [GET /visit/visitNumber]
+2021-01-22 10:04:32.892 [http-nio-8666-exec-6] DEBUG c.b.i.security.component.DynamicSecurityFilter - Authorized public object filter invocation [GET /code/query?code=123456789123456]
+2021-01-22 10:04:32.892 [http-nio-8666-exec-6] DEBUG c.b.i.security.component.DynamicSecurityFilter - Authorized public object filter invocation [GET /code/query?code=123456789123456]

@@ -4,6 +4,11 @@ spring:
   profiles:
     active: dev # 默认为开发环境
 
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss # 日期格式
+    default-property-inclusion: non_null
+    time-zone: GMT+8 # 北京时区
+
 
 mybatis-plus:
   configuration:
@@ -55,6 +60,10 @@ redis:
       name: 'identification'
       key:
         codeList: 'code:list'
+        whiteCode: 'whiteList:code'
+        blackCode: 'blackList:code'
+        visitor: 'visit:visitor'
+        visitRecord: 'visit:visitRecord'
   expire:
     common: 86400 # 24小时
 
@@ -67,3 +76,18 @@ knife4j:
   enable: true
   setting:
     language: zh-CN
+
+#rabbitmq:
+#  host: localhost # rabbitmq的连接地址
+#  port: 5672 # rabbitmq的连接端口号
+#  virtual-host: /identification # rabbitmq的虚拟host
+#  username: littlebob # rabbitmq的用户名
+#  password: wsd2586 # rabbitmq的密码
+#  publisher-confirms: true #如果对异步消息需要回调必须设置为true
+
+logging:
+  level:
+    root: info #日志配置DEBUG,INFO,WARN,ERROR
+    com.bob.identification: debug
+    com.bob.identification.*.mapper: debug
+  config: classpath:logback-spring.xml
