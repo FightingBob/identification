@@ -1,13 +1,2 @@
-2021-01-23 10:42:37.203 [main] DEBUG c.b.identification.IdentificationAdminApplication - Running with Spring Boot v2.4.1, Spring v5.3.2
-2021-01-23 10:43:31.598 [main] DEBUG c.b.identification.IdentificationAdminApplication - Running with Spring Boot v2.4.1, Spring v5.3.2
-2021-01-23 10:43:36.046 [main] DEBUG c.b.i.s.component.JwtAuthenticationTokenFilter - Filter 'jwtAuthenticationTokenFilter' configured for use
-2021-01-23 10:54:08.934 [http-nio-8666-exec-3] DEBUG c.b.i.security.component.DynamicSecurityFilter - Authorized public object filter invocation [GET /visit/visitNumber]
-2021-01-23 10:54:08.936 [http-nio-8666-exec-3] DEBUG c.b.i.security.component.DynamicSecurityFilter - Authorized public object filter invocation [GET /visit/visitNumber]
-2021-01-23 10:55:24.929 [http-nio-8666-exec-4] DEBUG c.b.i.security.component.DynamicSecurityFilter - Authorized filter invocation [GET /batch/list?pageNum=1&pageSize=10] with attributes [17:防伪批次管理]
-2021-01-23 10:55:24.930 [http-nio-8666-exec-4] DEBUG c.b.i.security.component.DynamicSecurityFilter - Authorized filter invocation [GET /batch/list?pageNum=1&pageSize=10] with attributes [17:防伪批次管理]
-2021-01-23 10:55:24.931 [http-nio-8666-exec-5] DEBUG c.b.i.security.component.DynamicSecurityFilter - Authorized filter invocation [GET /brand/list] with attributes [16:防伪品牌管理]
-2021-01-23 10:55:24.931 [http-nio-8666-exec-5] DEBUG c.b.i.security.component.DynamicSecurityFilter - Authorized filter invocation [GET /brand/list] with attributes [16:防伪品牌管理]
-2021-01-23 10:56:07.428 [http-nio-8666-exec-7] DEBUG c.b.i.security.component.DynamicSecurityFilter - Authorized filter invocation [POST /batch/delete?batchId=66] with attributes [17:防伪批次管理]
-2021-01-23 10:56:07.429 [http-nio-8666-exec-7] DEBUG c.b.i.security.component.DynamicSecurityFilter - Authorized filter invocation [POST /batch/delete?batchId=66] with attributes [17:防伪批次管理]
-2021-01-23 10:56:07.783 [http-nio-8666-exec-6] DEBUG c.b.i.security.component.DynamicSecurityFilter - Authorized filter invocation [GET /batch/list?pageNum=1&pageSize=10] with attributes [17:防伪批次管理]
-2021-01-23 10:56:07.784 [http-nio-8666-exec-6] DEBUG c.b.i.security.component.DynamicSecurityFilter - Authorized filter invocation [GET /batch/list?pageNum=1&pageSize=10] with attributes [17:防伪批次管理]
+2021-02-17 09:27:46.317 [main] DEBUG c.b.identification.IdentificationAdminApplication - Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-02-17 09:27:50.695 [main] DEBUG c.b.i.s.component.JwtAuthenticationTokenFilter - Filter 'jwtAuthenticationTokenFilter' configured for use

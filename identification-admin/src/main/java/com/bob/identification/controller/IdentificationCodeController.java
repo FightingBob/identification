@@ -103,8 +103,13 @@ public class IdentificationCodeController {
             }
         }
         Map<String, Object> dataMap = new HashMap<>();
-        dataMap.put("status", queryCodeResult.getQueryCode().getStatus() > 0 ? "有效" : "无效");
-        dataMap.put("isReal", queryCodeResult.getQueryCode().getIsReal() > 0 ? "真" : "假");
+        if (BeanUtil.isNotEmpty(queryCodeResult.getQueryCode())) {
+            dataMap.put("status", queryCodeResult.getQueryCode().getStatus() > 0 ? "有效" : "无效");
+            dataMap.put("isReal", queryCodeResult.getQueryCode().getIsReal() > 0 ? "真" : "假");
+        } else {
+            dataMap.put("status", "无效");
+            dataMap.put("isReal", "假");
+        }
         dataMap.put("serialNumber", code);
         dataMap.put("result", queryCodeResult.getResult());
         List<Object> list = new ArrayList<>();

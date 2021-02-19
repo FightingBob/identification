@@ -3,7 +3,6 @@ package com.bob.identification.controller;
 import cn.hutool.core.bean.BeanUtil;
 import com.bob.identification.common.api.CommonResult;
 import com.bob.identification.common.api.DatabaseOption;
-import com.bob.identification.common.api.QueryCode;
 import com.bob.identification.common.api.QueryCodeResult;
 import com.bob.identification.common.util.MyStrUtil;
 import com.bob.identification.identification.po.Batch;
@@ -11,6 +10,8 @@ import com.bob.identification.identification.po.Brand;
 import com.bob.identification.service.*;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,6 +26,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/home")
 public class HomeController {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(HomeController.class);
 
     @Autowired
     private IdentificationCodeService codeService;
@@ -47,9 +50,14 @@ public class HomeController {
     @Autowired
     private IdentificationOldCodeService oldCodeService;
 
+    @Autowired
+    private IdentificationVisitService visitService;
+
     @ApiOperation(value = "查询")
     @GetMapping("/query")
-    public CommonResult query(@RequestParam String code) {
+    public CommonResult query(@RequestParam String code, @RequestParam String ipAddress) {
+        LOGGER.info("访问用户IP地址：" + ipAddress);
+        visitService.operateIP(ipAddress);
         codeService.validateCode(code);
         QueryCodeResult queryCodeResult = codeService.queryCodeFromCache(code);
         if (BeanUtil.isNotEmpty(queryCodeResult)) {

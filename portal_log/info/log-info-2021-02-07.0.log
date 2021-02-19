@@ -1,0 +1,66 @@
+2021-02-07 09:27:01.662 [main] INFO  c.b.identification.IdentificationPortalApplication - Starting IdentificationPortalApplication using Java 1.8.0_221 on bob with PID 8732 (F:\my\springboot\identification\identification-portal\target\classes started by Administrator in F:\my\springboot\identification)
+2021-02-07 09:27:01.658 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-02-07 09:27:01.668 [main] INFO  c.b.identification.IdentificationPortalApplication - The following profiles are active: dev
+2021-02-07 09:27:02.650 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-07 09:27:02.653 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-07 09:27:02.690 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2021-02-07 09:27:03.184 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 09:27:03.192 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$680ab9f0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 09:27:03.205 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 09:27:03.304 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@b5c6a30' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 09:27:03.312 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 09:27:03.374 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 09:27:03.380 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 09:27:03.716 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2021-02-07 09:27:03.724 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2021-02-07 09:27:03.725 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-07 09:27:03.725 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 09:27:03.832 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-07 09:27:03.832 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2112 ms
+2021-02-07 09:27:04.174 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2021-02-07 09:27:04.555 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2021-02-07 09:27:04.556 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_1 - Starting...
+2021-02-07 09:27:04.581 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_1 - Start completed.
+2021-02-07 09:27:04.581 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_2 - Starting...
+2021-02-07 09:27:04.604 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_2 - Start completed.
+2021-02-07 09:27:04.605 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_3 - Starting...
+2021-02-07 09:27:04.636 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_3 - Start completed.
+2021-02-07 09:27:04.637 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_4 - Starting...
+2021-02-07 09:27:04.662 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_4 - Start completed.
+2021-02-07 09:27:04.662 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_5 - Starting...
+2021-02-07 09:27:04.684 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_5 - Start completed.
+2021-02-07 09:27:04.685 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - load a datasource named [slave_4] success
+2021-02-07 09:27:04.685 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - load a datasource named [slave_5] success
+2021-02-07 09:27:04.685 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - load a datasource named [slave_2] success
+2021-02-07 09:27:04.685 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - load a datasource named [slave_3] success
+2021-02-07 09:27:04.686 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - load a datasource named [master] success
+2021-02-07 09:27:04.686 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - load a datasource named [slave_1] success
+2021-02-07 09:27:04.686 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [6] datasource,primary datasource named [master]
+2021-02-07 09:27:06.213 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50c2ef56, org.springframework.security.web.context.SecurityContextPersistenceFilter@460b77d6, org.springframework.security.web.header.HeaderWriterFilter@205f52ea, org.springframework.security.web.authentication.logout.LogoutFilter@751bb780, com.bob.identification.security.component.JwtAuthenticationTokenFilter@4137aab0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13f2d42c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@37c74e4e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@560d6d2, org.springframework.security.web.session.SessionManagementFilter@33399052, org.springframework.security.web.access.ExceptionTranslationFilter@7cec3975, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7fd3fd06]
+2021-02-07 09:27:06.471 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-07 09:27:06.528 [main] INFO  c.a.cloud.sentinel.SentinelWebAutoConfiguration - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2021-02-07 09:27:07.043 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2021-02-07 09:27:07.195 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2021-02-07 09:27:07.213 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2021-02-07 09:27:07.280 [main] INFO  c.b.identification.IdentificationPortalApplication - Started IdentificationPortalApplication in 6.263 seconds (JVM running for 7.74)
+2021-02-07 09:30:57.989 [http-nio-8085-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-07 09:30:57.989 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-07 09:30:57.990 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-02-07 09:30:58.323 [http-nio-8085-exec-1] INFO  com.bob.identification.component.VisitAspect - 访问用户IP地址：192.168.0.48
+2021-02-07 09:30:59.066 [http-nio-8085-exec-1] INFO  com.bob.identification.common.log.WebLogAspect - {"method":"GET","description":"查询","uri":"/home/query","url":"http://192.168.0.48:8085/home/query","result":{"code":200,"data":"Due to system problem, this code 123456789123456 cannot be verified at the moment, please contact us via weisheda-laikou@foxmail.com for further assistance, thank you.","message":"操作成功"},"basePath":"http://192.168.0.48:8085","parameter":{"":"123456789123456"},"startTime":1612661458322,"spendTime":700}
+2021-02-07 10:30:17.112 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2021-02-07 10:30:17.118 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-07 10:30:17.250 [SpringContextShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2021-02-07 10:30:17.250 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - slave_4 - Shutdown initiated...
+2021-02-07 10:30:17.254 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - slave_4 - Shutdown completed.
+2021-02-07 10:30:17.254 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - slave_5 - Shutdown initiated...
+2021-02-07 10:30:17.257 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - slave_5 - Shutdown completed.
+2021-02-07 10:30:17.257 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - slave_2 - Shutdown initiated...
+2021-02-07 10:30:17.259 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - slave_2 - Shutdown completed.
+2021-02-07 10:30:17.260 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - slave_3 - Shutdown initiated...
+2021-02-07 10:30:17.262 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - slave_3 - Shutdown completed.
+2021-02-07 10:30:17.263 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2021-02-07 10:30:17.265 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2021-02-07 10:30:17.265 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - slave_1 - Shutdown initiated...
+2021-02-07 10:30:17.268 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - slave_1 - Shutdown completed.
+2021-02-07 10:30:17.268 [SpringContextShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye

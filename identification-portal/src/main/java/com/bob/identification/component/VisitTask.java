@@ -25,7 +25,7 @@ public class VisitTask {
      * 每天凌晨0点1分
      */
     //@Scheduled(cron = "0 1 0 * * ?")
-    @Scheduled(cron = "0 10 15 * * ?")
+    @Scheduled(cron = "0 1 0 * * ?")
     private void addDayVisitRecord() {
         LOGGER.info("添加每天访问记录");
         visitService.addDayVisitRecord();

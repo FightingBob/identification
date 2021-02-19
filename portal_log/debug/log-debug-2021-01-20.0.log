@@ -1,4 +1,0 @@
-2021-01-20 09:37:25.386 [main] DEBUG c.b.identification.IdentificationPortalApplication - Running with Spring Boot v2.4.1, Spring v5.3.2
-2021-01-20 09:37:27.612 [main] DEBUG c.b.i.s.component.JwtAuthenticationTokenFilter - Filter 'jwtAuthenticationTokenFilter' configured for use
-2021-01-20 09:37:57.245 [main] DEBUG c.b.identification.IdentificationPortalApplication - Running with Spring Boot v2.4.1, Spring v5.3.2
-2021-01-20 09:37:59.173 [main] DEBUG c.b.i.s.component.JwtAuthenticationTokenFilter - Filter 'jwtAuthenticationTokenFilter' configured for use

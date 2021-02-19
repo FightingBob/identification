@@ -2,7 +2,7 @@ spring:
   application:
     name: identification-admin
   profiles:
-    active: dev # 默认为开发环境
+    active: prod # 默认为开发环境
 
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss # 日期格式
